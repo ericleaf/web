@@ -1,6 +1,15 @@
-const toggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+const closeBtn = document.getElementById('close-menu');
 
-toggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+menuToggle.addEventListener('click', () => {
+  mobileMenu.classList.add('active');
 });
+
+closeBtn.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');
+});
+
+function closeMenu() {
+  mobileMenu.classList.remove('active');
+}

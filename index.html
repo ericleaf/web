@@ -2,21 +2,30 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>個人網站</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div class="logo">我的網站</div>
       <button class="hamburger" id="menu-toggle">&#9776;</button>
-      <ul class="nav-links" id="nav-links">
+      <ul class="nav-links desktop">
         <li><a href="#about">關於我</a></li>
         <li><a href="#experience">學經歷</a></li>
       </ul>
     </nav>
   </header>
+
+  <!-- 手機版側邊選單 -->
+  <div id="mobile-menu" class="mobile-menu">
+    <button id="close-menu" class="close-btn">&times;</button>
+    <ul>
+      <li><a href="#about" onclick="closeMenu()">關於我</a></li>
+      <li><a href="#experience" onclick="closeMenu()">學經歷</a></li>
+    </ul>
+  </div>
 
   <main>
     <section id="about">

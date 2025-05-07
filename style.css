@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
   background: #f4f4f4;
+  overflow-x: hidden;
 }
 
 header {
@@ -44,26 +44,66 @@ header {
   border-radius: 5px;
 }
 
+/* 漢堡選單 */
 .hamburger {
   display: none;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
   cursor: pointer;
 }
 
-/* 手機版樣式 */
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    background-color: #333;
-    width: 100%;
-    display: none;
-  }
+/* 側邊選單樣式 */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 75%;
+  max-width: 300px;
+  height: 100%;
+  background-color: #222;
+  color: white;
+  padding: 2rem 1.5rem;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
 
-  .nav-links.active {
-    display: flex;
+.mobile-menu ul {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.mobile-menu li {
+  margin: 1rem 0;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.close-btn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+
+/* 開啟狀態 */
+.mobile-menu.active {
+  left: 0;
+}
+
+/* 手機版顯示 */
+@media (max-width: 768px) {
+  .nav-links.desktop {
+    display: none;
   }
 
   .hamburger {
