@@ -12,8 +12,8 @@
       <div class="logo">我的網站</div>
       <button class="hamburger" id="menu-toggle">&#9776;</button>
       <ul class="nav-links desktop">
-        <li><a href="#about">關於我</a></li>
-        <li><a href="#experience">學經歷</a></li>
+        <li><a href="about">關於我</a></li>
+        <li><a href="experience">學經歷</a></li>
       </ul>
     </nav>
   </header>
@@ -22,10 +22,18 @@
   <div id="mobile-menu" class="mobile-menu">
     <button id="close-menu" class="close-btn">&times;</button>
     <ul>
-      <li><a href="#about" onclick="closeMenu()">關於我</a></li>
-      <li><a href="#experience" onclick="closeMenu()">學經歷</a></li>
+      <li><a href="about" onclick="closeMenu()">關於我</a></li>
+      <li><a href="experience" onclick="closeMenu()">學經歷</a></li>
     </ul>
   </div>
+
+  <!-- 首頁全版面照片區塊 -->
+  <section class="hero-section">
+    <img src="mainpage.jpg" alt="主頁照片" class="hero-img">
+    <button class="scroll-down-btn" id="scroll-down-btn" aria-label="往下捲動">
+      <span class="arrow"></span>
+    </button>
+  </section>
 
   <!-- 主內容 -->
   <main>

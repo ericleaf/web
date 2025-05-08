@@ -13,3 +13,7 @@ closeBtn.addEventListener('click', () => {
 function closeMenu() {
   mobileMenu.classList.remove('active');
 }
+
+document.getElementById('scroll-down-btn').addEventListener('click', function () {
+  document.querySelector('main').scrollIntoView({ behavior: 'smooth' });
+});
