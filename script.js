@@ -13,6 +13,3 @@ closeBtn.addEventListener('click', () => {
 function closeMenu() {
   mobileMenu.classList.remove('active');
 }
-function scrollToContent() {
-  document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
-}
