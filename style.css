@@ -122,35 +122,31 @@ section {
 .hero {
   position: relative;
   height: 100vh;
+  width: 100%;
   overflow: hidden;
 }
 
-.hero img {
+.hero-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
-.scroll-button {
+.scroll-down {
   position: absolute;
-  bottom: 40px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.7);
   border: none;
-  border-radius: 30px;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 2rem;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s;
 }
 
-.scroll-button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* 平滑滾動效果 */
-html {
-  scroll-behavior: smooth;
+.scroll-down:hover {
+  background: rgba(255, 255, 255, 1);
 }
