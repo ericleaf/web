@@ -44,6 +44,24 @@ header {
   border-radius: 5px;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 32px;
+  width: 32px;
+  margin-right: 8px;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 /* 漢堡選單 */
 .hamburger {
   display: none;
@@ -119,8 +137,6 @@ section {
   margin-bottom: 3rem;
 }
 
-/* ...existing code... */
-
 /* 首頁全版面照片區塊 */
 .hero-section {
   position: relative;
@@ -194,5 +210,3 @@ section {
     transform: translateY(10px) rotate(-45deg);
   }
 }
-
-/* ...existing code... */
