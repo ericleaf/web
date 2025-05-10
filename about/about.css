@@ -1,0 +1,7 @@
+.nav-links a[href="/about"] {
+    font-weight: bold;
+}
+
+.mobile-menu a[href="/about"] {
+    font-weight: bold;
+}
